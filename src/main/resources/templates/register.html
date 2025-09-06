@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div class="form-container">
+		<h1>Welcome to the User Registration:</h1>
+		<form action="/register" method="post">
+			<label>Enter the Username:</label>
+			<input type="text" name="username" placeholder="Enter User name" required><br><br>
+			
+			<label>Password :</label>
+			<input type="password" name="password" placeholder="Enter the password" required><br><br>
+			
+			<label>Enter Email:</label>
+			<input type="text" name="email" placeholder="Enter Email Id" required><br><br>
+			
+			
+			<label>Enter your FullName:</label>
+			<input type="text" name="full_name" placeholder="Enter Your Full name" required><br><br>
+			
+			<label>Your Gender:</label>
+			<div class="radio-group">
+				<label><input type="radio" name="gender" value="Male"> Male</label>
+				<label><input type="radio" name="gender" value="Female"> Female</label>
+				<label><input type="radio" name="gender" value="Others"> Others</label>
+			</div>
+			
+			<label>Role :</label>
+			<div class="radio-group">
+				<label><input type="radio" name="role" value="admin"> Admin</label>
+				<label><input type="radio" name="role" value="customers"> Customers</label>
+			</div>
+			
+			<input type="submit" value="REGISTER" class="btn">
+		</form>
+	</div>
+</body>
+</html>
